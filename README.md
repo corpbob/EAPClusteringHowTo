@@ -1,15 +1,16 @@
 # EAPClusteringHowTo
 
-Assumptions:
+## Assumptions:
 
 - We will be using a virtual box image of RHEL Enterprise Server 7.3. To make things simple, we will use "bridge" networking for the VM.
 
 You need to download the following software in order to set this up:
 
-- Enterprise Application Platform - Register as a developer in developer.redhat.com and download the installer [https://developers.redhat.com/download-manager/file/jboss-eap-6.4.0.GA-installer.jar]
+- Enterprise Application Platform - Register as a developer in [developer.redhat.com](developer.redhat.com) and download the installer https://developers.redhat.com/download-manager/file/jboss-eap-6.4.0.GA-installer.jar
 
 - Apache http server with mod_cluster modules: http://downloads.jboss.org/mod_cluster//1.3.1.Final/linux-x86_64/mod_cluster-1.3.1.Final-linux2-x64.tar.gz 
 
+## Install and Configure EAP
 1. Create directory $HOME/eap_cluster
    cd $HOME
    mkdir eap_cluster
@@ -53,6 +54,7 @@ You need to download the following software in order to set this up:
    echo './bin/standalone.sh -Djboss.node.name=node2 --server-config=standalone-ha.xml -Djboss.socket.binding.port-offset=100' >> run.sh
    chmod +x run.sh
    ```
+## Build and Install An Example Cluster-enabled web app   
 8. Clone the repository https://github.com/akquinet/jbosscc-as7-examples.git
    ```bash
    cd /tmp
@@ -78,6 +80,8 @@ You need to download the following software in order to set this up:
    cd $HOME/eap_cluster/node2
    ./run.sh
    ```
+   
+## Install and Configure mod_cluster   
 13. Download http://downloads.jboss.org/mod_cluster//1.3.1.Final/linux-x86_64/mod_cluster-1.3.1.Final-linux2-x64.tar.gz and as root unzip to / folder.
    ```bash
    cd /tmp
