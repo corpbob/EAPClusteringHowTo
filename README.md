@@ -26,6 +26,7 @@ You need to download the following software in order to set this up:
 ```
 In the example below, the bind address of public is set to 192.168.1.238.
 
+```
 <interfaces>
         <interface name="management">
             <inet-address value="${jboss.bind.address.management:127.0.0.1}"/>
@@ -37,7 +38,7 @@ In the example below, the bind address of public is set to 192.168.1.238.
             <inet-address value="${jboss.bind.address.unsecure:127.0.0.1}"/>
         </interface>
     </interfaces>
-
+```
 5. Do the same for node2
 6. Create a file run.sh in node1 containing the following:
 
