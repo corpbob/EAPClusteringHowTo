@@ -16,29 +16,30 @@ You need to download the following software in order to set this up:
 
 2. Install the EAP server into directory $HOME/eap_cluster/node1
 3. Copy the directory node1 into node2
-   cd $HOME/eap_cluster
-   cp -r node1 node2
-
+   ```bash
+      cd $HOME/eap_cluster
+      cp -r node1 node2
+   ```
 4. Edit configuration for node1 and look for the <interfaces> element. Change the bind address of "public" to the IP address of your VM.
-``` bash
-   cd $HOME/eap_cluster/node1
-   vi standalone/configuration/standalone-ha.xml 
-```
-In the example below, the bind address of public is set to 192.168.1.238.
+   ``` bash
+      cd $HOME/eap_cluster/node1
+      vi standalone/configuration/standalone-ha.xml 
+   ```
+  In the example below, the bind address of public is set to 192.168.1.238.
 
-```
-<interfaces>
-        <interface name="management">
-            <inet-address value="${jboss.bind.address.management:127.0.0.1}"/>
-        </interface>
-        <interface name="public">
-            <inet-address value="${jboss.bind.address:192.168.1.238}"/>
-        </interface>
-        <interface name="unsecure">
-            <inet-address value="${jboss.bind.address.unsecure:127.0.0.1}"/>
-        </interface>
-    </interfaces>
-```
+   ```
+   <interfaces>
+           <interface name="management">
+               <inet-address value="${jboss.bind.address.management:127.0.0.1}"/>
+           </interface>
+           <interface name="public">
+               <inet-address value="${jboss.bind.address:192.168.1.238}"/>
+           </interface>
+           <interface name="unsecure">
+               <inet-address value="${jboss.bind.address.unsecure:127.0.0.1}"/>
+           </interface>
+       </interfaces>
+   ```
 5. Do the same for node2
 6. Create a file run.sh in node1 containing the following:
 
