@@ -101,7 +101,7 @@ cd /opt/jboss/httpd/
 17. Test your cluster. Navigate to http://192.168.1.238/cluster/index.jsf
 
 You should see something like:
-(images/cluster_html_output.png)
+![alt text](images/cluster_html_output.png)
 
 18. If the page is being served by node1 (or node2), go the the terminal of node1 (or node2) and kill the process.
 19. Reload your browser. If should serve you the page by node2 (or node1).
