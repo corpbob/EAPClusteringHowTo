@@ -4,7 +4,7 @@
 
 This demo will show how clustering of EAP instances work. We will build the following setup:
 
-![Alt Text](images/architecture.png)
+<img src="images/architecture.png" width="500">
 
 ## Assumptions:
 
@@ -115,11 +115,12 @@ You need to download the following software in order to set this up:
 17. Test your cluster. Navigate to http://192.168.1.238/cluster/index.jsf. Change the IP address to the IP of your VM.
 
    You should see something like:
-   ![alt text](images/cluster_html_output.png)
+   
+   <img src="images/cluster_html_output.png" width="500">
 
 18. If the page is being served by node1 (or node2), go the the terminal of node1 (or node2) and kill the process.
 19. Reload your browser. If should serve you the page by node2 (or node1).
 
-   ![alt test](images/cluster_html_node1_output.png)
+   <img src="images/cluster_html_node1_output.png" width="500">
 
 
