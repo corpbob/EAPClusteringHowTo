@@ -19,7 +19,7 @@ You need to download the following software in order to set this up:
    cd $HOME/eap_cluster
    cp -r node1 node2
 
-4. Edit configuration for node1 and look for the <interfaces> element. Change the bind address of "public" to the IP address of y
+4. Edit configuration for node1 and look for the <interfaces> element. Change the bind address of "public" to the IP address of your VM.
 
    cd $HOME/eap_cluster/node1
    vi standalone/configuration/standalone-ha.xml 
