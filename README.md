@@ -1,5 +1,11 @@
 # EAPClusteringHowTo
 
+## Architecture
+
+This demo will show how clustering of EAP instances work. We will build the following setup:
+
+![Alt Text](images/architecture.png)
+
 ## Assumptions:
 
 - We will be using a virtual box image of RHEL Enterprise Server 7.3. To make things simple, we will use "bridge" networking for the VM.
