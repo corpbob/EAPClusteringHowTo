@@ -106,7 +106,7 @@ You need to download the following software in order to set this up:
    ```
 
 ## Test your cluster   
-17. Test your cluster. Navigate to http://192.168.1.238/cluster/index.jsf
+17. Test your cluster. Navigate to http://192.168.1.238/cluster/index.jsf. Change the IP address to the IP of your VM.
 
    You should see something like:
    ![alt text](images/cluster_html_output.png)
