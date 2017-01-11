@@ -20,10 +20,10 @@ You need to download the following software in order to set this up:
    cp -r node1 node2
 
 4. Edit configuration for node1 and look for the <interfaces> element. Change the bind address of "public" to the IP address of your VM.
-
+``` bash
    cd $HOME/eap_cluster/node1
    vi standalone/configuration/standalone-ha.xml 
-
+```
 In the example below, the bind address of public is set to 192.168.1.238.
 
 <interfaces>
