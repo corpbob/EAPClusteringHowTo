@@ -4,7 +4,7 @@
 
 This demo will show how clustering of EAP instances work. We will build the following setup:
 
-![Alt Text](images/architecture.png)
+<img src="images/architecture.png" width="500">
 
 ## Assumptions:
 
