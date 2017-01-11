@@ -108,4 +108,6 @@ You need to download the following software in order to set this up:
 18. If the page is being served by node1 (or node2), go the the terminal of node1 (or node2) and kill the process.
 19. Reload your browser. If should serve you the page by node2 (or node1).
 
+   ![alt test](images/cluster_html_node1_output.png)
+
 
