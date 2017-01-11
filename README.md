@@ -104,6 +104,7 @@ You need to download the following software in order to set this up:
    ```
    11:45:15,481 INFO  [org.jboss.modcluster] (ContainerBackgroundProcessor[StandardEngine[jboss.web]]) MODCLUSTER000011: jboss.web will use a4b9f704-70e7-3382-bf8d-21b481e81bf6 as jvm-route
    ```
+
 ## Test your cluster   
 17. Test your cluster. Navigate to http://192.168.1.238/cluster/index.jsf
 
